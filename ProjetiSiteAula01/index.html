@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="myStyle.css">
+
+<body>
+
+<h2 style="color:steelblue; margin-left:50px">Site</h2>    
+
+<div class="container">
+    <form action="">
+  
+      <label for="pNome">Primeiro Nome</label>
+      <input type="text" id="fname" name="firstname" placeholder="Digite seu nome..">
+  
+      <label for="lname">Sobrenome</label>
+      <input type="text" id="sNome" name="lastname" placeholder="Sobrenome..">
+  
+      <label for="country">Pais</label>
+      <select id="country" name="country">
+        <option value="brasil">Brasil</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" name="descricao" placeholder="Descrição.." style="height:200px"></textarea>
+  
+      <input type="submit" onclick="myFunction()" value="Submit" >
+  
+    </form>
+  </div>
+
+<script>
+function myFunction() {
+  alert("teste");
+}
+</script>
+
+</body>
+</html>
