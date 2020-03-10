@@ -2,10 +2,14 @@
 <html>
 
 <link rel="stylesheet" href="myStyle.css">
-
+<script type="text/javascript" src="teste.js"></script>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Projeto Aula 1</title>
+</head>
 <body>
 
-<h2 style="color:steelblue; margin-left:50px">Site</h2>    
+<h2 style="color:steelblue; margin-left:50px">Site Aula 01</h2>    
 
 <div class="container">
     <form action="">
@@ -17,14 +21,17 @@
       <input type="text" id="sNome" name="lastname" placeholder="Sobrenome..">
   
       <label for="country">Pais</label>
-      <select id="country" name="country">
+      <select id="country" name="country" onchange="mudouValor()">
         <option value="brasil">Brasil</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
       </select>
-  
+      
       <label for="descricao">Descrição</label>
       <textarea id="descricao" name="descricao" placeholder="Descrição.." style="height:200px"></textarea>
+
+      <label for="pNome">Pais selecionado</label>
+      <input type="text" id="pSelecionado" name="pSelecionado">
   
       <input type="submit" onclick="myFunction()" value="Submit" >
   
